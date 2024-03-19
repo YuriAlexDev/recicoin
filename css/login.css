@@ -84,13 +84,14 @@ body {
 	flex-direction: row;
 	justify-content: center;
 	align-items: center;
+	
 		
 }
 .box{
 	width: 500px;
 	height: 500px;
 	background-color:whitesmoke;
-	position: relative;
+	
 	text-align: center;
 	border-radius: 5%;
 	
@@ -104,9 +105,20 @@ body {
 	color: #000;
 	position: relative;
 	top: 100px;
+
 	
 }
-
+.linklogin{
+	
+	color: white;
+	background-color: green;
+	border-radius: 5;
+	width: 50px;
+	height: 80px;
+}
+button{
+	border: groove;
+}
 [tabindex="-1"]:focus {
 	outline: 0 !important;
 }
