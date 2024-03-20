@@ -91,33 +91,36 @@ body {
 	width: 500px;
 	height: 500px;
 	background-color:whitesmoke;
-	
 	text-align: center;
 	border-radius: 5%;
 	
 	
 }
-.texto-login{
-	margin-top: 10px;
 
-}
 .inputs-login{
 	color: #000;
-	position: relative;
 	top: 100px;
-
+	position: relative;
+	text-align: center;
 	
 }
+.divlogin{
+	width: 500px;
+	height: 5vh;
+	margin-top: 25px
+}
 .linklogin{
-	
+	position: ;
 	color: white;
 	background-color: green;
-	border-radius: 5;
-	width: 50px;
-	height: 80px;
+	margin-top: 5px;
+	width: 110px;
+	height: 30px;
+	margin-top: 40px;
 }
 button{
 	border: groove;
+	
 }
 [tabindex="-1"]:focus {
 	outline: 0 !important;
@@ -207,32 +210,6 @@ sub {
 
 sup {
 	top: -.5em;
-}
-
-a {
-	color: #33d648;
-	text-decoration: none;
-	background-color: transparent;
-	-webkit-text-decoration-skip: objects;
-}
-
-a:hover {
-	color: #23a3d9;
-	text-decoration: underline;
-}
-
-a:not([href]):not([tabindex]) {
-	color: inherit;
-	text-decoration: none;
-}
-
-a:not([href]):not([tabindex]):hover, a:not([href]):not([tabindex]):focus {
-	color: inherit;
-	text-decoration: none;
-}
-
-a:not([href]):not([tabindex]):focus {
-	outline: 0;
 }
 
 pre,
