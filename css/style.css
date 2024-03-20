@@ -16,7 +16,7 @@
 .header-right .title     { width:100%; float:left; font-family: 'Lato', sans-serif; font-weight:700; font-size:23pxem; color:#ffffff; margin-bottom:20px; border-bottom:1px #e3e3e3 solid; padding-bottom:10px; }
 
 .header-right .header-newsletter         { width:100%; float:left;  }
-.header-right .header-newsletter .campo  { width: 100%; height: 45px; float: left; font-family: 'Lato', sans-serif; font-size: 1.2em; border:none; outline:none; border-radius:50px; background: #ffffff; margin-bottom: 15px; outline: none; padding: 5px 15px; color:#353535; transition:.3s; }
+.header-right .header-newsletter .campo  { width: 100%; height: 45px; float: left; font-family: 'Lato', sans-serif; font-size: 1.2em; border:none; outline:none; border-radius:50px; background: #ffffff; margin-bottom: 15px; outline: none; padding: 5px 15px; color:#c7c7c7; transition:.3s; }
 .header-right .header-newsletter .campo:focus { color:#353535!important; }
 .header-right .header-newsletter .btn         { display: block; width: 100%; height:50px; padding: 20px 353535; font-family: 'Lato', sans-serif; font-size:18px; font-weight: bold; text-transform: uppercase; cursor: pointer; color: #ffffff; background: #00ff0d; border-radius:50px; border:none; transition: .3s; }
 .header-right .header-newsletter .btn:hover   { background: #353535; color: #ffffff;}
@@ -36,7 +36,7 @@
 .depoimento blockquote:after  { content: "\201D";  right: 20px; bottom: 35px; }
 .depoimento .author img {  max-width:100%; height:100px; width:100px; border-radius:50%; margin-bottom:15px; display:inline-block; z-index:1; position:relative; }
 .depoimento .author         { margin: 0; text-align: center; color: #ffffff; }
-.depoimento .author h5      { color:#1762df; font-family: 'Lato', sans-serif; font-size:18px; font-weight: 800;}
+.depoimento .author h5      { color:#00ff22ad; font-family: 'Lato', sans-serif; font-size:18px; font-weight: 800;}
 .depoimento .author h5 span { color:#030303; font-family: 'Lato', sans-serif; font-size:16px; font-weight: 400; margin-top:10px; display: block; }
 
 /*Controle da Paginação carrossel*/
@@ -94,12 +94,12 @@ ul.bxslider     { list-style: none; }
 .section-sobre .title   { width: 100%; float:left; margin-bottom:5px; font-family: 'Lato', sans-serif; font-size:1.8em; font-weight:700; color:#efb453; padding-bottom:5px; }
 .section-sobre .row     { width:100%; float:left; }
 .section-sobre .row .col-left-sobre  { width:100%; margin:auto; }
-.section-sobre .row .col-right-sobre { width:100%; margin-top:0px; background-color: rgba(23, 98, 223); padding:25px; border-radius: 15px; }
+.section-sobre .row .col-right-sobre { width:100%; margin-top:0px; background-color: #00ff22ad; padding:25px; border-radius: 15px; }
 .section-sobre .row .col-right-sobre .title { width:100%; margin-bottom:20px; color:#ffffff; font-size:22px; text-align:left; font-family: 'Lato', sans-serif; }
 .section-sobre .row .col-right-sobre p      { width:100%; margin-bottom:20px; color:#ffffff; font-size: 16px; font-family: 'Lato', sans-serif;}
 
 /*FOOTER*/
-.footer          { background-color: rgba(23, 98, 223); color:#353535; font-size:0.875em; font-family: 'Lato', sans-serif; }
+.footer          { background-color: #00ff22ad; color:#353535; font-size:0.875em; font-family: 'Lato', sans-serif; }
 .footer .content { padding:3em 0em; }
 
 .row-footer           { width:100%; height:auto; float:left; margin-bottom:0.5em;  }
