@@ -1,79 +1,56 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
- <head>
-	
-	<meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="Landingpage" content="Recicoin" />
-  
-    
     <meta name="author" content="Equipe Recicoin" />
-    
     <meta http-equiv="content-language" content="pt-br" />
- 
-    
-    <!--[if lt IE 9]>
-        <script src="js/html5shiv.js"></script>
-    <![endif]-->       
-
-	<link rel="stylesheet" type="text/css" href="css/reset.css">
-	<link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/fonts-icones.css">
     <link rel="shortcut icon" href="moeda.ico" type="image/ico" />
-
-	<title>Recicoin</title>
-
- </head>
-
+    <title>Recicoin</title>
+</head>
 <body>
-    
-<header class="header container">        
-    
-    <div class="content">
-        
-        <div class="header-left">
-           
-            <div class="header_logo">
-            
-                <a href="index.html" target="_blank">
-                    <img src="img/moeda.ico"/>
-                </a>
+    <header class="header container">
+        <div class="content">
+            <div class="header-left">
+                <div class="header_logo">
+                    <a href="index.html">
+                        <img src="img/moeda.ico"/>
+                    </a>
+                </div>
+                <h1 class="title">Seja agora um membro oficial Recicoin<br><b>Trabalhe conosco!</b></h1>
+                <p class="texto">
+                    Cadastre-se agora com <br> alguns cliques e em poucos minutos.
+                </p>
+            </div><!--left-->
+            <div class="header-right">
+                <h2 class="title">Faça o cadastro abaixo.</h2>     
+                <form class="header-newsletter" action="cadastroconcluido.html" method="get">
+                    <input class="campo" name="nome" placeholder="Nome" required="" autocomplete="off">
+                    <input class="campo" name="email" placeholder="E-mail" required="" autocomplete="off">
+                    <input class="campo" name="telefone" placeholder="Telefone" required="" autocomplete="off">
+                    <input class="campo" name="cpf" placeholder="CPF" required="" autocomplete="off">
+                    <input class="campo" name="datadenascimento" placeholder="Data de Nascimento" required="" autocomplete="off">
+                    <input class="campo" name="localização" placeholder="Localização" required="" autocomplete="off">
+                    <div> 
+                        <button class="btn">CADASTRE-SE</button>
+                    </div>
+                    <br>
+                    <!-- Adicionado botão de login -->
+                    <div>
+                        <button class="btn" type="button" onclick="window.location.href='loginv2.html';">LOGIN</button>
+                    </div>
+                </form>
+            </div><!--right-->
+        </div>
+    </header>
 
-            </div>
 
-            <h1 class="title">Seja agora um membro oficial Recicoin<br><b>Trabalhe conosco!</b> </h1>
-            
-            <p class="texto">
-                Cadastre-se agora com <br> alguns cliques e em poucos minutos.
-            </p>
-
-            <p class="texto"></p>
-        
-        </div><!--left-->
-        
-        <div class="header-right">
-            
-            <h2 class="title">Faça o cadastro abaixo.</h2>     
-            
-            <form class="header-newsletter" action="#" method="post">
-
-              <input class="campo" name="nome" placeholder="Nome" required="" autocomplete="off">
-              <input class="campo" name="email" placeholder="E-mail" required="" autocomplete="off">
-              <input class="campo" name="telefone" placeholder="Telefone" required="" autocomplete="off">
-
-              <button class="btn">CADASTRAR</button>
-
-            </form>
-
-        </div><!--right-->
-
-    
-    </div>
-
-</header>
 
 <main class="main_content container">
 
@@ -89,9 +66,11 @@
 
                 <div class="col-right-sobre"> 
                    
-                    <h2 class="title">Saiba sobre nossa empresa</h2>
-                    <p>parágrafo.</p>
-                    <p>parágrafo.</p>
+                    <h2 class="title">Qual nosso objetivo?</h2>
+                    <p>Acreditamos que a reciclagem recompensada é o futuro da sustentabilidade. 
+                        Ao tornar a reciclagem mais atraente e acessível, podemos inspirar mais pessoas a se envolverem na 
+                        construção de um planeta mais verde e saudável para todos.</p>
+                    <p></p>
 
                 </div> 
 
@@ -116,12 +95,13 @@
                     <figure class="depoimento">
                         
                         <blockquote>
-                      Adicionar texto depois     
+                      Confesso que após me cadastrar e iniciar o processo de reciclagem, aderi o processo como uma rotina! 
+                      Obrigado ao profissional que me ajudou bastante na hora de reciclar!    
                         </blockquote>
                       
                         <div class="author">
                             
-                            <img src="img/depoimentos/dentista.png" alt="sq-sample1"/>
+                            <img src="img/depoimentos/brasileira-sorrindo.jpeg" alt="sq-sample1"/>
                             <h5>Juliana Silva <span> Manicure</span></h5>
                         
                         </div>
@@ -131,12 +111,13 @@
                     <figure class="depoimento">
                         
                         <blockquote>
-                            Adicionar texto depois       
+                            Adorei o processo de reciclagem! Gosto da forma que o profissional presente na coleta
+                            nos mostra como funciona!       
                         </blockquote>
                       
                         <div class="author">
                             
-                            <img src="img/depoimentos/gestor-de-trafego.png" alt="sq-sample1"/>
+                            <img src="img/depoimentos/homem-sorrindo.jpeg" alt="sq-sample1"/>
                             <h5>Rodrigo Almeida <span> Marcineiro</span></h5>
                         
                         </div>
@@ -146,28 +127,32 @@
                     <figure class="depoimento">
                         
                         <blockquote>
-                            Adicionar texto depois    
+                           Já tive a honra de trabalhar com reciclagem por 25 anos! Está sendo muito gratificante poder ajudar o mundo
+                           a ser um lugar melhor!
+     
                         </blockquote>
                       
                         <div class="author">
                             
-                            <img src="img/depoimentos/designer.png" alt="sq-sample1"/>
-                            <h5>Carolina Costa <span> Vendedora</span></h5>
+                            <img src="img/depoimentos/idoso-sorrindo.jpeg" alt="sq-sample1"/>
+                            <h5>Ricardo Souza <span> Aposentado</span></h5>
                         
                         </div>
-                    
+            
                     </figure>
 
                     <figure class="depoimento">
                         
                         <blockquote>
-                            Adicionar texto depois      
+                            Sou professor de matemática e com certeza vou aderir e apresentar aos meus alunos
+                            o exemplo que a Recicoin utiliza para calculo dos produtos para reciclar!
+                            #areciclagemimporta!     
                         </blockquote>
                       
                         <div class="author">
                             
-                            <img src="img/depoimentos/gestor-de-trafego.png" alt="sq-sample1"/>
-                            <h5>Rodrigo Almeida <span> Professor</span></h5>
+                            <img src="img/depoimentos/homem-professor.jpeg" alt="sq-sample1"/>
+                            <h5>Marcelo R. Soares <span> Professor</span></h5>
                         
                         </div>
                     
