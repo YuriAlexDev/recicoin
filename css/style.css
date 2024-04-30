@@ -2,6 +2,8 @@
 
 
 /*HEADER*/
+
+
 .header          { background-image: url("../img/patern2.jpg"); background-size:cover; background-repeat:no-repeat; padding:60px 0; }
 .header .content { float:left; padding:0px 0; }
 
@@ -212,3 +214,4 @@ ul.bxslider     { list-style: none; }
 
 }
 /*Fecha o Responsivo*/
+

@@ -53,5 +53,24 @@ $(function(){
         });
 
     }  
+   
+   
+function calcularValor() {
+    const valorPorKg = parseFloat(document.getElementById('material').value);
+    let quantidadeGramas = parseFloat(document.getElementById('quantidade').value);
+
+    if (!valorPorKg || quantidadeGramas <= 0) {
+        alert("Por favor, preencha todos os campos corretamente.");
+        return;
+    }
+
+    let quantidadeKg = quantidadeGramas / 1000; // Convertendo gramas para quilogramas
+    let valorTotal = quantidadeKg * valorPorKg;
+
+    document.getElementById('resultado').style.display = 'block';
+    document.getElementById('resultado').textContent = `Valor a receber: R$ ${valorTotal.toFixed(2)}`;
+}
 
 }); 
+
+

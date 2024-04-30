@@ -1,0 +1,32 @@
+body {
+    font-family: 'Rubik', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.message {
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.icon {
+    color: #4CAF50;
+    font-size: 48px;
+    margin-top: 20px;
+}
+
+.redirect-link {
+    color: #007BFF;
+    text-decoration: none;
+    margin-top: 15px;
+    display: block;
+}

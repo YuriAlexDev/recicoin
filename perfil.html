@@ -6,84 +6,7 @@
     <title>Perfil do Usuário</title>
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <style>
-        body {
-            font-family: 'Rubik', sans-serif;
-            margin: 0;
-            background-color: #fff;
-            color: #4CAF50;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            position: relative;
-            flex-direction: column;
-        }
-        .navbar {
-            width: 100%;
-            background-color: white;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-            padding: 10px 20px;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            position: fixed;
-            top: 0;
-            left: 0;
-            z-index: 1000; /* Ensure navbar is above other content */
-        }
-        .nav-links, .social-icons {
-            display: flex;
-            align-items: center;
-        }
-        .nav-link, .social-icon {
-            text-decoration: none;
-            color: #4CAF50;
-            font-size: 16px;
-            padding: 10px;
-            display: flex;
-            align-items: center;
-        }
-        .nav-link i, .social-icon i {
-            margin-right: 8px;
-        }
-        .logo {
-            position: absolute;
-            left: 50%;
-            transform: translateX(-50%);
-        }
-        .logo img {
-            height: 50px; /* Adjust size as needed */
-        }
-        .profile-container {
-            border: 2px solid #4CAF50;
-            border-radius: 10px;
-            padding: 20px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-            width: 300px;
-            margin-top: 80px; /* Enough space to clear the fixed navbar */
-        }
-        .profile-picture {
-            width: 120px;
-            height: 120px;
-            background-color: #ddd;
-            border-radius: 50%;
-            margin: 10px auto;
-            display: block;
-            background-image: url('img/depoimentos/foto-yuri.png');
-            background-size: cover;
-            background-position: center;
-        }
-        .profile-info {
-            margin-top: 20px;
-        }
-        .info {
-            margin-bottom: 10px;
-        }
-        .info i {
-            margin-right: 8px;
-        }
-    </style>
+    <link rel="stylesheet" href="css/perfil.css">
 </head>
 <body>
     <nav class="navbar">
@@ -91,6 +14,7 @@
             <a href="inicio.html" class="nav-link"><i class="fas fa-home"></i>Início</a>
             <a href="sobre.html" class="nav-link"><i class="fas fa-info-circle"></i>Sobre</a>
             <a href="perfil.html" class="nav-link"><i class="fas fa-user"></i>Perfil</a>
+            <a href="paginadeconversao.html" class="nav-link"><i class="fas fa-calculator"></i> Calculadora</a>
         </div>
         <div class="logo">
             <img src="img/logo-recicoin.jpg" alt="Logo Recicoin">
@@ -108,7 +32,7 @@
             <div class="info"><i class="fas fa-user"></i>Nome: Yuri Oliveira</div>
             <div class="info"><i class="fas fa-birthday-cake"></i>Data de Nascimento: 12/04/2006</div>
             <div class="info"><i class="fas fa-id-card"></i>CPF: 000.000.000-00</div>
-            <div class="info"><i class="fas fa-map-marker-alt"></i>Localização: Olinda, PE</div>
+            <div class="info"><i class="fas fa-map-marker-alt"></i>Localização: Pernambuco</div>
         </div>
     </div>
 </body>

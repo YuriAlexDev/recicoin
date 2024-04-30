@@ -29,19 +29,47 @@
                 </p>
             </div><!--left-->
             <div class="header-right">
-                <h2 class="title">Faça o cadastro abaixo.</h2>     
+                <h2 class="title">Faça o cadastro abaixo.</h2>
                 <form class="header-newsletter" action="cadastroconcluido.html" method="get">
                     <input class="campo" name="nome" placeholder="Nome" required="" autocomplete="off">
                     <input class="campo" name="email" placeholder="E-mail" required="" autocomplete="off">
                     <input class="campo" name="telefone" placeholder="Telefone" required="" autocomplete="off">
-                    <input class="campo" name="cpf" placeholder="CPF" required="" autocomplete="off">
-                    <input class="campo" name="datadenascimento" placeholder="Data de Nascimento" required="" autocomplete="off">
-                    <input class="campo" name="localização" placeholder="Localização" required="" autocomplete="off">
+                    <input class="campo" name="cpf" type="text" placeholder="CPF" required pattern="\d{11}" title="Digite um CPF válido com 11 dígitos, apenas números.">
+                    <input class="campo" type="date" name="datadenascimento" required id="dateOfBirth">
+                    <select class="campo" name="localizacao" required="">
+                        <option value="">Selecione seu Estado</option>
+                        <option value="AC">Acre</option>
+                        <option value="AL">Alagoas</option>
+                        <option value="AP">Amapá</option>
+                        <option value="AM">Amazonas</option>
+                        <option value="BA">Bahia</option>
+                        <option value="CE">Ceará</option>
+                        <option value="DF">Distrito Federal</option>
+                        <option value="ES">Espírito Santo</option>
+                        <option value="GO">Goiás</option>
+                        <option value="MA">Maranhão</option>
+                        <option value="MT">Mato Grosso</option>
+                        <option value="MS">Mato Grosso do Sul</option>
+                        <option value="MG">Minas Gerais</option>
+                        <option value="PA">Pará</option>
+                        <option value="PB">Paraíba</option>
+                        <option value="PR">Paraná</option>
+                        <option value="PE">Pernambuco</option>
+                        <option value="PI">Piauí</option>
+                        <option value="RJ">Rio de Janeiro</option>
+                        <option value="RN">Rio Grande do Norte</option>
+                        <option value="RS">Rio Grande do Sul</option>
+                        <option value="RO">Rondônia</option>
+                        <option value="RR">Roraima</option>
+                        <option value="SC">Santa Catarina</option>
+                        <option value="SP">São Paulo</option>
+                        <option value="SE">Sergipe</option>
+                        <option value="TO">Tocantins</option>
+                    </select>
                     <div> 
                         <button class="btn">CADASTRE-SE</button>
                     </div>
                     <br>
-                    <!-- Adicionado botão de login -->
                     <div>
                         <button class="btn" type="button" onclick="window.location.href='loginv2.html';">LOGIN</button>
                     </div>
@@ -49,6 +77,16 @@
             </div><!--right-->
         </div>
     </header>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var today = new Date();
+            var minAge = 18;
+            var maxDate = new Date(today.getFullYear() - minAge, today.getMonth(), today.getDate()).toISOString().split('T')[0];
+            document.getElementById('dateOfBirth').max = maxDate;
+        });
+    </script>
+
 
 
 
