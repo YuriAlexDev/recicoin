@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esqueceu a Senha - Recicoin</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/teladelogin.css">
+    <link rel="stylesheet" href="CSS/header.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo-container">
+            <img src="imgs/logo-recicoin.jpg" alt="Recicoin Logo">
+        </div>
+    </header>
+    <div class="login-container">
+        <h2>Recuperar Senha</h2>
+        <p>Insira o e-mail associado à sua conta e enviaremos um link para você redefinir sua senha.</p>
+        <form action="enviar-recuperacao.php" method="post">
+            <input type="email" name="email" placeholder="Seu e-mail" class="login-input" required>
+            <button type="submit" class="login-btn">Enviar Link de Recuperação</button>
+        </form>
+        <div class="login-form-footer">
+            <p>Lembrou a senha? <a href="teladelogin.html">Faça o login</a></p>
+        </div>
+    </div>
+</body>
+</html>

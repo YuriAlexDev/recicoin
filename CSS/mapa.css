@@ -1,0 +1,44 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+    background-color: #f4f4f4;
+}
+
+.map-container {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    background-color: #fff;
+}
+
+.map-image {
+    width: 80%; /* Ajuste conforme necessário para um tamanho adequado */
+    max-width: 800px; /* Limita o tamanho máximo */
+    height: auto;
+}
+
+.location-info {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.location {
+    margin-bottom: 20px;
+}
+
+h2, h3 {
+    color: #4CAF50;
+}
+
+p {
+    font-size: 16px;
+    color: #666;
+    margin: 5px 0;
+}
+

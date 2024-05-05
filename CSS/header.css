@@ -1,0 +1,17 @@
+.header {
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo-container img {
+    width: 200px; /* Ajuste o tamanho da logo conforme necessário */
+}
+

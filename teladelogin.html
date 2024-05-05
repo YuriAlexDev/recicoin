@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastro - Recicoin</title>
+    <title>Login - Recicoin</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="CSS/teladelogin.css">
@@ -17,17 +17,14 @@
     </header>
 
     <div class="login-container">
-        <h2>Cadastre-se</h2>
-        <form action="register" method="post">
-            <input type="text" name="nome" placeholder="Nome completo" class="login-input" required>
+        <h2>Faça o login</h2>
+        <form action="dashboard.html" method="post">
             <input type="email" name="email" placeholder="E-mail" class="login-input" required>
             <input type="password" name="senha" placeholder="Senha" class="login-input" required>
-            <input type="password" name="confirmasenha" placeholder="Confirme a senha" class="login-input" required>
-            <input type="text" name="cpf" placeholder="CPF (somente números)" class="login-input" required pattern="\d{11}">
-            <input type="date" name="datadenascimento" placeholder="Data de Nascimento" class="login-input" required>
-            <button type="submit" class="login-btn">Cadastrar</button>
+            <button type="submit" class="login-btn">Entrar</button>
             <div class="login-form-footer">
-                <p>Já tem uma conta? <a href="teladelogin.html">Faça o login</a></p>
+                <p><a href="esqueceuasenha.html">Esqueceu sua senha?</a></p>
+                <p>Não tem uma conta? <a href="cadastro.html">Cadastre-se</a></p>
             </div>
         </form>
     </div>
