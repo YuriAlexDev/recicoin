@@ -42,3 +42,14 @@ p {
     margin: 5px 0;
 }
 
+.welcome{
+    position: relative;
+    height: 5em;
+    text-align: center;
+
+
+}
+.content{
+     
+    font-size: 30px;
+}
