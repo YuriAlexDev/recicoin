@@ -19,18 +19,19 @@
     <div class="login-container">
         <h2>Cadastre-se</h2>
         <form action="register" method="post">
-            <input type="text" name="nome" placeholder="Nome completo" class="login-input" required>
-            <input type="email" name="email" placeholder="E-mail" class="login-input" required>
+            <input type="email" name="email" placeholder="E-mail" class="login-input" required id="nome">
             <input type="password" name="senha" placeholder="Senha" class="login-input" required>
             <input type="password" name="confirmasenha" placeholder="Confirme a senha" class="login-input" required>
             <input type="text" name="cpf" placeholder="CPF (somente números)" class="login-input" required pattern="\d{11}">
             <input type="date" name="datadenascimento" placeholder="Data de Nascimento" class="login-input" required>
-            <button type="submit" class="login-btn">Cadastrar</button>
+            <button type="submit" class="login-btn" onclick="login" > <a href="mapa.html" class="login">Cadastrar</a>    </button>
             <div class="login-form-footer">
                 <p>Já tem uma conta? <a href="teladelogin.html">Faça o login</a></p>
             </div>
         </form>
     </div>
+
+    <script src="JavaScript/cadastro.js"></script>
 </body>
 </html>
 

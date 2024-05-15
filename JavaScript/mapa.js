@@ -1,8 +1,6 @@
 const content = document.querySelector(".content");
 
-
-
-const url = "http://localhost:8080/login"
+const url = "http://localhost:8080/login/get"
 
 async function getName(){
 
