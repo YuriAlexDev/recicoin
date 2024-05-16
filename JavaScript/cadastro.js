@@ -1,36 +1,40 @@
 const url = "http://localhost:8080/login/post"
-const name = document.getElementById("#nome").values
 
-    const newUser = {
+const formElement = document.querySelector('.form');
 
-        name: "Teste",
-        email : "email@.com",
-        password: "1234",
-        cpf: "12345678912",
-        birthday: "16/04/2003"
-    }
-    async function postNewUser(){
-    
-        const reponse =  await fetch('http://localhost:8080/login/post', {
-            method: 'POST',
-            headers:{
-                'Content-Type': 'application/json'
-            },
-            body: JSON.stringify(newUser)
-        });
-    
-        //console.log(reponse);
-    
-        const data = await reponse.json();
-        
-       // console.log(data);
-    
-    
-    
-    
-    }
-    
-    postNewUser();
+   
+formElement.addEventListener('submit', event=>{
+    event.preventDefault();
+
+
+    const formData = new FormData(formElement);
+
+    const data = Object.fromEntries(formData);
+
+    fetch(url, {
+        method: 'POST',
+        headers: {
+
+            'Content-Type': 'application/json'
+        },
+
+        body: JSON.stringify(data)
+
+
+
+    });
+
+});
+
+
+
+
+
+
+
+
+
+  
     
 
 
