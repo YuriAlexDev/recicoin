@@ -18,14 +18,17 @@
 
     <div class="login-container">
         <h2>Cadastre-se</h2>
-        <form class="form">
+        <form class="form" >
             <input type="text" name="name" placeholder="Nome" class="login-input" required id="nome">
             <input type="email" name="email" placeholder="E-mail" class="login-input" >
             <input type="password" name="password" placeholder="Senha" class="login-input" required>
             <input type="password" name="password" placeholder="Confirme a senha" class="login-input" required>
             <input type="text" name="cpf" placeholder="CPF (somente números)" class="login-input" required pattern="\d{11}">
             <input type="date" name="birthday" placeholder="Data de Nascimento" class="login-input" required>
-            <button type="submit" class="login-btn"> <a href="mapa.html" class="login">Cadastrar</a>    </button>
+
+
+            <button type="submit" class="login-btn" onclick="location.href='http://127.0.0.1:5500/mapa.html';"> Cadastre-se </button>
+            
             <div class="login-form-footer">
                 <p>Já tem uma conta? <a href="teladelogin.html">Faça o login</a></p>
             </div>
