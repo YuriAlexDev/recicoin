@@ -16,22 +16,22 @@ import com.recicoin.Recicoin.models.Login;
 import com.recicoin.Recicoin.repository.LoginRepository;
 
 @RestController
-@CrossOrigin(origins = "*")
+@CrossOrigin(origins = "*") // Tira o erro CORS
 @RequestMapping("/login")
 public class LoginController {
 	
-	@Autowired 
+	@Autowired // Interface do repository
 	private LoginRepository loginrepository;
 	
-	@GetMapping("/get")
+	@GetMapping("/get")// Metodo http GET
 	public List<Login> listar(){
 		
 		return loginrepository.findAll();
 		
 	}
 	
-	@PostMapping("/post")
-	@CrossOrigin(origins = "*")
+	@PostMapping("/post") //Metodo http POST 
+	@CrossOrigin(origins = "*") // Tira o erro CORS
 	@ResponseStatus(HttpStatus.CREATED)
 	public Login adcionar (@RequestBody Login login) {
 		
