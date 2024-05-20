@@ -16,6 +16,7 @@ body, html {
     width: 80%; /* Ajuste conforme necessário para um tamanho adequado */
     max-width: 800px; /* Limita o tamanho máximo */
     height: auto;
+    padding-top: 70px ;
 }
 
 .location-info {
@@ -52,4 +53,20 @@ p {
 .content{
      
     font-size: 30px;
+}
+.fav-btn{
+    
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 10%;
+    font-size: 16px;
+
+}
+
+.fav-btn:hover {
+    background-color: #367c39;
 }
