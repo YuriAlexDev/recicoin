@@ -29,8 +29,9 @@ public class Favoritos {
 	@Column(nullable = false)
 	private String preco;
 
-	public void getId(Long id) {
-		this.id = id;
+	
+	public Long getId() {
+		return id;
 	}
 
 	public String getNome() {
