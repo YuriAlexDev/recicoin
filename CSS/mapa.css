@@ -70,3 +70,24 @@ p {
 .fav-btn:hover {
     background-color: #367c39;
 }
+.link{
+    position: absolute;
+    width: 100%;
+    font-size: 16px;
+   
+}
+a{
+    text-decoration: none;
+    margin-left: 20px;
+   
+}
+a:hover{
+    border-bottom: 3px solid #367c39 ;
+    text-decoration: none;
+}
+a:visited{
+    text-decoration: none;
+    color: black;
+}
+
+

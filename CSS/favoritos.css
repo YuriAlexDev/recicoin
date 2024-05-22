@@ -54,9 +54,9 @@ p {
      
     font-size: 30px;
 }
-.fav-btn{
+.exc-btn{
     
-    background-color: #4CAF50;
+    background-color: red;
     color: white;
     border: none;
     padding: 10px 20px;
@@ -64,9 +64,10 @@ p {
     border-radius: 5px;
     width: 10%;
     font-size: 16px;
+    margin-top: 20px;
 
 }
 
-.fav-btn:hover {
-    background-color: #367c39;
+.exc-btn:hover {
+    background-color: rgb(167, 40, 40);
 }
