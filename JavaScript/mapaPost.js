@@ -7,7 +7,7 @@ loc.addEventListener('submit', event=>{
     event.preventDefault();
  
  
-   
+    alert("Adicionado aos favoritos")
 
     const data = {
         nome: "Centro de Reciclagem Alpha",
@@ -37,7 +37,9 @@ const loc2 = document.querySelector(".location2");
 
 loc2.addEventListener('submit', event=>{
     event.preventDefault();
- 
+    
+    alert("Adicionado aos favoritos")
+
     const nome = document.querySelector(".nome")
 
     
@@ -71,6 +73,8 @@ const loc3 = document.querySelector(".location3");
 
 loc3.addEventListener('submit', event=>{
     event.preventDefault();
+
+    alert("Adicionado aos favoritos")
  
     const nome = document.querySelector(".nome")
 
@@ -105,6 +109,8 @@ const loc4 = document.querySelector(".location4");
 
 loc4.addEventListener('submit', event=>{
     event.preventDefault();
+
+    alert("Adicionado aos favoritos")
  
     const nome = document.querySelector(".nome")
 

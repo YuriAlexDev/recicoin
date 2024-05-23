@@ -51,6 +51,7 @@ public class FavoritosController {
 	
 	
 	@DeleteMapping("delete/{id}")
+	@CrossOrigin(origins = "*")
 	public void delete(@PathVariable Long id) {
 		
 		 favoritosrepository.deleteById(id);

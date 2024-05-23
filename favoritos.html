@@ -7,8 +7,12 @@
     <link rel="stylesheet" href="CSS/favoritos.css">
     <link rel="stylesheet" href="CSS/header.css">
 </head>
-<body class="page" onload="carrega()" >
+<body class="page">
     <header class="header">
+        <div class="link">
+            <a href="mapa.html" target="_blank">HOME
+                </a>
+        </div>
         <div class="logo-container">
             <img src="imgs/logo-recicoin.jpg" alt="Recicoin Logo">
         </div>
@@ -18,41 +22,44 @@
     <div class="fav-info" >
         <h2>Favoritos</h2>
 
-        <div class="location1">
+        
+        <form id="location1">
             <h3 class="nome1"></h3>
             <p><strong>Endereço: </strong><span class="endereco1"></span></p>
             <p><strong>Horário de Funcionamento :</strong><span class="horario1"></span></p>
             <p><strong>Preços:</strong></strong><span  class="preco1"></span></p>
 
-            <button type="submit" class="exc-btn">Excluir</button>
-        </div>
+            <button type="submit" class="exc-btn" onclick="location.href='http://127.0.0.1:5500/favoritos.html?'">Excluir</button>
+        </form>
 
-        <form class="location2">
+        <form id="location2">
             <h3 class="nome2"></h3>
             <p><strong>Endereço: </strong><span class="endereco2"></span></p>
             <p><strong>Horário de Funcionamento: </strong><span class="horario2"></span></p>
             <p><strong>Preços: </strong></strong><span  class="preco2"></span></p>
 
-            <button type="submit" class="exc-btn">Excluir</button>
+            <button type="submit" class="exc-btn" onclick="location.href='http://127.0.0.1:5500/favoritos.html?'">Excluir</button>
         </form>
 
-        <form class="location3">
+        <form id="location3">
             <h3 class="nome3"></h3>
             <p><strong>Endereço: </strong><span class="endereco3"></span></p>
             <p><strong>Horário de Funcionamento: </strong><span class="horario3"></span></p>
             <p><strong>Preços: </strong></strong><span  class="preco3"></span></p>
 
-            <button type="submit" class="exc-btn">Excluir</button>
+            <button type="submit" class="exc-btn" onclick="location.href='http://127.0.0.1:5500/favoritos.html?'" >Excluir</button>
         </form>
 
-        <form class="location4">
+        <form id="location4">
             <h3 class="nome4"></h3>
             <p><strong>Endereço: </strong><span class="endereco4"></span></p>
             <p><strong>Horário de Funcionamento: </strong><span class="horario4"></span></p>
             <p><strong>Preços: </strong></strong><span  class="preco4"></span></p>
 
-                <button type="submit" class="exc-btn">Excluir</button>
+                <button type="submit" class="exc-btn" onclick="location.href='http://127.0.0.1:5500/favoritos.html?'">Excluir</button>
         </form>
+
+
 
         <script src="JavaScript/favoritos.js"></script>
      </div>  

@@ -1,8 +1,22 @@
 
+const loc1 = document.getElementById('location1');
+const loc2 = document.getElementById('location2');
+const loc3 = document.getElementById('location3');
+const loc4 = document.getElementById('location4');
+
+
+
+loc1.style.display = "none";
+loc2.style.display = "none";
+loc3.style.display = "none";
+loc4.style.display = "none";
+
+
 
 
 for(var j = 1; j<=4; j++){
 const url = `http://localhost:8080/favoritos/get/${j}`
+const control = j
 
 switch(j){
 
@@ -13,14 +27,17 @@ async function getFav1(){
     const horario1 = document.querySelector(".horario1");
     const preco1 = document.querySelector(".preco1");
 
-
-
+    
     const reponse =  await fetch(url);
 
     console.log(reponse);
     console.log(typeof(reponse))
 
     const data = await reponse.json();
+
+    if(data != null){
+        loc1.style.display = "block"
+    }
     
     console.log(data);
     console.log(typeof(data))
@@ -35,9 +52,22 @@ async function getFav1(){
         horario1.innerHTML = result[3][1]
         preco1.innerHTML = result[4][1]
 
+        
 
+        loc1.addEventListener("submit", event =>{
 
-    
+            event.preventDefault();
+         
+            const urlDelete = `http://localhost:8080/favoritos/delete/${control}`
+        
+            const options = {
+                method: "DELETE"
+            }
+        
+            fetch(urlDelete, options)
+            .then(reponse => console.log(reponse.status))
+        
+        });
 
 }
 
@@ -59,6 +89,10 @@ async function getFav2(){
     console.log(typeof(reponse))
 
     const data = await reponse.json();
+
+    if(data != null){
+        loc2.style.display = "block"
+    }
     
     console.log(data);
     console.log(typeof(data))
@@ -75,7 +109,20 @@ async function getFav2(){
 
 
 
-    
+        loc2.addEventListener("submit", event =>{
+
+            event.preventDefault();
+         
+            const urlDelete = `http://localhost:8080/favoritos/delete/${control}`
+        
+            const options = {
+                method: "DELETE"
+            }
+        
+            fetch(urlDelete, options)
+            .then(reponse => console.log(reponse.status))
+        
+        });
 
 }
 
@@ -90,13 +137,16 @@ async function getFav3(){
     const preco3 = document.querySelector(".preco3");
 
 
-
     const reponse =  await fetch(url);
 
     console.log(reponse);
     console.log(typeof(reponse))
 
     const data = await reponse.json();
+
+    if(data != null){
+        loc3.style.display = "block"
+    }
     
     console.log(data);
     console.log(typeof(data))
@@ -113,7 +163,20 @@ async function getFav3(){
 
 
 
-    
+        loc3.addEventListener("submit", event =>{
+
+            event.preventDefault();
+         
+            const urlDelete = `http://localhost:8080/favoritos/delete/${control}`
+        
+            const options = {
+                method: "DELETE"
+            }
+        
+            fetch(urlDelete, options)
+            .then(reponse => console.log(reponse.status))
+        
+        });
 
 }
 
@@ -127,7 +190,8 @@ async function getFav4(){
     const horario4 = document.querySelector(".horario4");
     const preco4 = document.querySelector(".preco4");
 
-
+  
+    
 
     const reponse =  await fetch(url);
 
@@ -135,6 +199,10 @@ async function getFav4(){
     console.log(typeof(reponse))
 
     const data = await reponse.json();
+
+    if(data != null){
+        loc4.style.display = "block"
+    }
     
     console.log(data);
     console.log(typeof(data))
@@ -150,7 +218,20 @@ async function getFav4(){
         preco4.innerHTML = result[4][1]
 
 
+        loc4.addEventListener("submit", event =>{
 
+            event.preventDefault();
+         
+            const urlDelete = `http://localhost:8080/favoritos/delete/${control}`
+        
+            const options = {
+                method: "DELETE"
+            }
+        
+            fetch(urlDelete, options)
+            .then(reponse => console.log(reponse.status))
+        
+        });
     
 
 }
@@ -160,3 +241,6 @@ break;
 
 }
 }
+
+
+

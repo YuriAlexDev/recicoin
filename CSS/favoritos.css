@@ -71,3 +71,25 @@ p {
 .exc-btn:hover {
     background-color: rgb(167, 40, 40);
 }
+.fav-container{
+    display: n;
+}
+.link{
+    position: absolute;
+    width: 100%;
+    font-size: 16px;
+   
+}
+a{
+    text-decoration: none;
+    margin-left: 20px;
+   
+}
+a:hover{
+    border-bottom: 3px solid #367c39 ;
+    text-decoration: none;
+}
+a:visited{
+    text-decoration: none;
+    color: black;
+}
