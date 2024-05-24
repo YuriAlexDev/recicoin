@@ -1,27 +1,16 @@
 
-const loc1 = document.getElementById('location1');
-const loc2 = document.getElementById('location2');
-const loc3 = document.getElementById('location3');
-const loc4 = document.getElementById('location4');
-
-
-
-loc1.style.display = "none";
-loc2.style.display = "none";
-loc3.style.display = "none";
-loc4.style.display = "none";
-
-
-
-
 for(var j = 1; j<=4; j++){
-const url = `http://localhost:8080/favoritos/get/${j}`
-const control = j
+const url = `http://localhost:8080/favoritos/get/${j}`,control = j
+
+const loc = document.getElementById(`location${j}`);
+
+loc.style.display = "none";
 
 switch(j){
 
 case 1:
 async function getFav1(){
+   
     const nome1 = document.querySelector(".nome1");
     const endereco1 = document.querySelector(".endereco1");
     const horario1 = document.querySelector(".horario1");
@@ -36,7 +25,7 @@ async function getFav1(){
     const data = await reponse.json();
 
     if(data != null){
-        loc1.style.display = "block"
+        loc.style.display = "block"
     }
     
     console.log(data);
@@ -54,7 +43,7 @@ async function getFav1(){
 
         
 
-        loc1.addEventListener("submit", event =>{
+        loc.addEventListener("submit", event =>{
 
             event.preventDefault();
          
@@ -74,6 +63,7 @@ async function getFav1(){
 getFav1();
 break;
 
+
 case 2:
 async function getFav2(){
     const nome2 = document.querySelector(".nome2");
@@ -91,7 +81,7 @@ async function getFav2(){
     const data = await reponse.json();
 
     if(data != null){
-        loc2.style.display = "block"
+        loc.style.display = "block"
     }
     
     console.log(data);
@@ -109,7 +99,7 @@ async function getFav2(){
 
 
 
-        loc2.addEventListener("submit", event =>{
+        loc.addEventListener("submit", event =>{
 
             event.preventDefault();
          
@@ -129,6 +119,7 @@ async function getFav2(){
 getFav2();
 break;
 
+
 case 3:
 async function getFav3(){
     const nome3 = document.querySelector(".nome3");
@@ -145,7 +136,7 @@ async function getFav3(){
     const data = await reponse.json();
 
     if(data != null){
-        loc3.style.display = "block"
+        loc.style.display = "block"
     }
     
     console.log(data);
@@ -163,7 +154,7 @@ async function getFav3(){
 
 
 
-        loc3.addEventListener("submit", event =>{
+        loc.addEventListener("submit", event =>{
 
             event.preventDefault();
          
@@ -183,6 +174,7 @@ async function getFav3(){
 getFav3();
 break;
 
+
 case 4:
 async function getFav4(){
     const nome4 = document.querySelector(".nome4");
@@ -201,7 +193,7 @@ async function getFav4(){
     const data = await reponse.json();
 
     if(data != null){
-        loc4.style.display = "block"
+        loc.style.display = "block"
     }
     
     console.log(data);
@@ -218,7 +210,7 @@ async function getFav4(){
         preco4.innerHTML = result[4][1]
 
 
-        loc4.addEventListener("submit", event =>{
+        loc.addEventListener("submit", event =>{
 
             event.preventDefault();
          
