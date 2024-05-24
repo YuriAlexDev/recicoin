@@ -1,7 +1,16 @@
 
 const urlFav = "http://localhost:8080/favoritos/post"
 
-const loc = document.querySelector(".location");
+
+
+for(var j = 1 ; j <= 4 ; j++){
+
+const loc = document.querySelector(`.location${j}`)
+
+
+switch(j){
+
+case 1:
 
 loc.addEventListener('submit', event=>{
     event.preventDefault();
@@ -33,9 +42,12 @@ loc.addEventListener('submit', event=>{
 
 });
 
-const loc2 = document.querySelector(".location2");
+break;
 
-loc2.addEventListener('submit', event=>{
+case 2:
+
+
+loc.addEventListener('submit', event=>{
     event.preventDefault();
     
     alert("Adicionado aos favoritos")
@@ -69,9 +81,12 @@ loc2.addEventListener('submit', event=>{
 
 });
 
-const loc3 = document.querySelector(".location3");
+break;
 
-loc3.addEventListener('submit', event=>{
+case 3:
+
+
+loc.addEventListener('submit', event=>{
     event.preventDefault();
 
     alert("Adicionado aos favoritos")
@@ -105,9 +120,11 @@ loc3.addEventListener('submit', event=>{
 
 });
 
-const loc4 = document.querySelector(".location4");
+break;
 
-loc4.addEventListener('submit', event=>{
+case 4:
+
+loc.addEventListener('submit', event=>{
     event.preventDefault();
 
     alert("Adicionado aos favoritos")
@@ -140,3 +157,7 @@ loc4.addEventListener('submit', event=>{
     });
 
 });
+
+break;
+}
+}
