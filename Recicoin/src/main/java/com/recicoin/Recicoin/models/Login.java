@@ -23,7 +23,7 @@ public class Login {
 	private String email;
 	
 	@Column(nullable = false)
-	private Long password;
+	private String password;
 	
 	@Column(nullable = false)
 	private String cpf;
@@ -43,11 +43,13 @@ public class Login {
 		this.name = name;
 	}
 
-	public Long getPassword() {
+	
+
+	public String getPassword() {
 		return password;
 	}
 
-	public void setPassword(Long password) {
+	public void setPassword(String password) {
 		this.password = password;
 	}
 
