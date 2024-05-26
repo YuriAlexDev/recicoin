@@ -1,0 +1,76 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="text"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.estrelas input[type="radio"] {
+    display: none;
+}
+
+.estrelas label {
+    font-size: 30px;
+    color: #aaa;
+    cursor: pointer;
+}
+
+.estrelas label:before {
+    content: "\2605";
+    margin-right: 5px;
+}
+
+.estrelas input[type="radio"]:checked ~ label {
+    color: #ffc107;
+}
+
+button[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+button[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+
+
+
+
+

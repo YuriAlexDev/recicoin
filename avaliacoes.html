@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recicoin - Avaliação</title>
+    <link rel="stylesheet" href="CSS/avaliacoes.css">
+    <link rel="stylesheet" href="CSS/header.css">
+    <link rel="stylesheet" href="CSS/mapa.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Avaliação de Centro de Reciclagem</h2>
+        <form id="avaliacao-form" action="http://localhost:8080/avaliacoes" method="post">
+            <input type="hidden" id="centroId" name="centroId" value="1"> <!-- Substitua pelo ID do centro real -->
+            <input type="hidden" id="dataCriacao" name="dataCriacao" value="">
+            
+            <label for="avaliacao">Qual sua avaliação?</label>
+            <div class="estrelas">
+                <input type="radio" id="estrela1" name="rating" value="1"><label for="estrela1"></label>
+                <input type="radio" id="estrela2" name="rating" value="2"><label for="estrela2"></label>
+                <input type="radio" id="estrela3" name="rating" value="3"><label for="estrela3"></label>
+                <input type="radio" id="estrela4" name="rating" value="4"><label for="estrela4"></label>
+                <input type="radio" id="estrela5" name="rating" value="5"><label for="estrela5"></label>
+            </div>
+            
+            <label for="comentario">Qual o motivo dessa avaliação?</label>
+            <textarea id="comentario" name="comentario" rows="4" required></textarea>
+            
+            <button type="submit">Enviar Avaliação</button>
+        </form>
+    </div>
+    <script src="JavaScript/avaliacoes.js"></script>
+</body>
+</html>
+
+
+
+

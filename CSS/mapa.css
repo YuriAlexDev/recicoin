@@ -70,6 +70,22 @@ p {
 .fav-btn:hover {
     background-color: #367c39;
 }
+.meu-botao {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 10%;
+    font-size: 16px;
+}
+
+.meu-botao:hover {
+    background-color: #367c39;
+}
+
+
 .link{
     position: absolute;
     width: 100%;
