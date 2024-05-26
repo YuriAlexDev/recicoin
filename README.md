@@ -15,13 +15,13 @@ Segundo o Anuário da Reciclagem 2022, feito pelo Instituto Pragma, em média, s
 
 
 # TECNOLOGIAS USADAS
-https://img.shields.io/badge/HTML-239120?style=for-the-badge&logo=html5&logoColor=white
+HTML
 
-https://img.shields.io/badge/CSS-239120?&style=for-the-badge&logo=css3&logoColor=white
+CSS
 
-https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black
+JAVASCRIPT
 
-https://img.shields.io/badge/Spring-6DB33F?style=for-the-badge&logo=spring&logoColor=white
+JAVA/ SPRINGBOOT
 
 
 # ETAPAS DE INSTALAÇÃO 
