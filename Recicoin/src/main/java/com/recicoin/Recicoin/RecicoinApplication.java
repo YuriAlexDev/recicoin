@@ -10,11 +10,6 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 @SpringBootApplication(exclude = {SecurityAutoConfiguration.class})
 public class RecicoinApplication {
 
-<<<<<<< HEAD
-    public static void main(String[] args) {
-        SpringApplication.run(RecicoinApplication.class, args);
-    }
-=======
 	public static void main(String[] args) {
 		SpringApplication.run(RecicoinApplication.class, args);
 	}
@@ -25,5 +20,4 @@ public class RecicoinApplication {
 		return encoder;
 	}
 
->>>>>>> e5bd92478b7693d6400b2cf67a61445651ca00a2
 }
