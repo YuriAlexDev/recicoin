@@ -1,4 +1,3 @@
-# Recicoin
 
 
 
@@ -21,7 +20,7 @@ CSS
 
 JAVASCRIPT
 
-JAVA/ SPRINGBOOT
+JAVA/SPRINGBOOT
 
 
 # ETAPAS DE INSTALAÇÃO 
